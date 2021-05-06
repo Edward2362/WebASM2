@@ -1,0 +1,873 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:ital,wght@0,300;0,376;1,602&display=swap);
+
+@font-face {
+    font-family: Raleway-italic;
+    src: url(../WebASM1/Raleway/Raleway-Italic-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+main {
+    margin: 0;
+    border: 0;
+    padding: 0px 100px;
+    background-color: #cef1ff ;
+}
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    clear: both;
+    margin: 0px 100px;
+    height: 87px;
+}
+
+header {
+    font-family: 'Open Sans', sans-serif;
+    position: sticky;
+    top: 0;
+}
+
+/* header */
+.container {
+    margin: 0px 100px;
+    height: 87px; 
+    background-color: white;
+}
+
+.logo {
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+    width: 87px;
+    height: 100%; ;
+    padding: 0px 90px;
+}
+
+.logo img{
+    width: 122px;
+    height: 87px;
+}
+
+.menu {
+    vertical-align: top;
+    text-align: right;
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+
+.menu nav {
+    height: 100%;
+}
+
+.menu nav * {
+    padding: 0px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.menu nav *:hover {
+    color: #FCC6D7;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+    background-color: white;
+    width: 150%;
+    height: 30px;
+    text-align: left;
+    padding-top: 1vh;
+    padding-left: 0;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: white
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* End Header */
+
+/* Main (index.html) */
+
+section{
+    height: fit-content;
+    padding: 100px 0px;
+    border-bottom: 3px #FCC6D7 solid;
+}
+
+.section-body{
+    padding: 39px 39px;
+    background-color: white;
+    height: fit-content;
+}
+
+.product {
+    height: 400px;
+}
+
+    /* section-heading */
+
+    .section-heading {
+    font-family: Raleway-italic, sans-serif;
+    padding: 20px 0px;
+    font-weight:bold;
+    font-size: 30px;
+    }
+
+    /* end section-heading */
+
+    /* store tag */
+    .card-container {
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    }
+
+    .store-card {
+    margin: 39px;
+    height: 15em;
+    max-width: 45em;
+    flex: 1 1 auto;
+    display: flex;
+    background-color: white;
+    box-shadow: 1px 3px 3px rgba(252, 198, 215, 0.8);
+    }
+
+    .card-body {
+    width: 12em;
+    max-height: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    padding: 1.8em;
+    }
+
+    .store-card img {
+    height: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    flex: 1 1 auto;
+    }
+
+    .store-card a {
+    width: 240px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    }
+
+    .card-text h1, .card-text p {
+    margin-top: 0;
+    }
+    /* end store tag */
+
+/* End Main (index.html) */
+
+    /* product tag */
+
+    .product-card {
+        height: 100%;
+        margin: 0px 39px;
+        width: 250px;
+        background-color: white;
+        text-align: center;
+        box-shadow: 1px 3px 3px rgba(252, 198, 215, 0.8);
+    }
+
+    .product-card a {
+        text-decoration: none ; 
+        color: black;
+        object-fit: cover;
+    }
+
+    .product-card a img {
+        padding-top: 10px;
+        width: 100%;
+        height: 50%;
+        flex: 1 1 auto;
+        object-fit: contain;
+    }
+    
+    /* end product tag */
+    
+/* Main register form */
+    .form-body-register
+    {
+        background-color: pink;
+        padding : 50px 70px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .form-body-register div {
+        width: 100%;
+    }
+
+    .form-body-register form label{
+        display: inline-block;
+        clear: left;
+        min-width: 150px;
+        max-width: 250px;
+        text-align: right;
+    }
+    .form-body-register form input {
+        margin: 10px;
+        display: inline-block;
+        width: 380px;
+        
+    }
+    .form-body-register form label[for=acctype1]{
+        text-align: right;
+        width: 100px; ;
+    }
+    .form-body-register form label[for=acctype2]{
+        text-align: right;
+        width: 100px;
+    }
+    .form-body-register form input[type=radio]{
+        display:inline-block;
+        width: fit-content;
+    }
+    .form-body-register form select {
+        margin: 10px;
+        display: inline-block;
+    }
+    .form-body-register .submit-area input{
+        width: 75px;
+        float: right;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+/* End Main register form */
+
+/* Main (about.us(mall) */
+
+    /* information tag */
+    
+    .information-card {
+        height: calc(100% - 100px);
+        width: 100%;
+        padding: 50px;
+        background-color: white;
+    }
+
+    .information-card-avatar {
+        height: 100%;
+        width: 200px;
+        float: left;
+        padding-right: 20px;
+    }
+
+    .information-card-avatar img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .information-card-body {
+        height: 100%;
+        float: left;
+        padding-left: 20px;
+        border-left: solid #FCC6D7;
+    }
+
+    .information-card-body h1 {
+        margin: 0;
+        font-weight: bold;
+    }
+
+    /* End information tag */
+
+
+/*  End Main (about.us(mall) */
+
+/* Main (fee(mall) */
+
+    table {
+        width:100%;
+    }
+
+    .fee-table tr th{
+        padding: 23px 5px;
+        border-bottom: solid #FCC6D7;
+    }
+
+    .fee-table tr td{
+        border-bottom: solid #FCC6D7;
+        padding: 23px 5px;
+        text-align: center;
+    }
+
+/* Main fees(mall) */
+
+/* Main FAQs(mall)*/
+    .body-faq
+    {
+        background-color: pink;
+        padding : 50px 70px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .question-body {
+        text-align: justify;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 5px solid #cef1ff;
+    }
+
+/* End Main FAQs(mall)*/
+
+/* My Account */
+
+.card-container-my-account {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+.information-card-my-account {
+    height: calc(100% - 100px);
+    width: 100%;
+    padding: 50px;
+    background-color: white;
+}
+
+.information-card-avatar-my-account {
+    height: 35%;
+    width: 200px;
+    float: left;
+    padding-right: 20px;
+}
+
+.information-card-avatar-my-account img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.information-card-body-my-account {
+    height: 100%;
+    float: left;
+    padding-left: 20px;
+    border-left: solid #FCC6D7;
+}
+
+.information-card-body-my-account h1 {
+    margin: 0;
+    font-weight: bold;
+}
+
+
+/* End My Account */
+
+/* Contact */ 
+    .form-body-contact{
+    background-color: pink;
+    padding: 120px 150px;
+    margin-left: 20%;
+    margin-right: 20%;
+    }
+    .form-body-contact label{
+        padding: 2px 0px;
+    }
+
+    .form-body-contact p{
+        font-weight: bold;
+    }
+
+    .form-body-contact input{
+        padding: 2px 0px;
+    }  
+    .form-body-contact>form select{
+        display: block;
+        width: 50%;
+    }
+
+    .form-body-contact>form button{
+        display: block;
+        width: 100%;
+    }  
+    
+    #form-purposes label{
+        font-weight: bold;
+    }
+
+    #form-name input{
+        float: left;
+        width: 50%;
+    }
+
+    #form-name label{
+        float: left;
+        width: 100%;
+        font-weight: bold;
+    }
+
+    #form-email p{
+        float: left;
+        width: 70%;
+        font-weight: bold
+    }
+    #form-email input{
+        float: left;
+        width: 50%;
+    }
+
+    #form-phone input {
+        float: left;
+        width: 50%;
+    }
+
+    #form-phone p{
+        float: left;
+        width: 70%;
+        font-weight: bold;
+    }
+
+    #form-method p{
+        float: left;
+        width: 100%;
+    }
+
+    #form-method label{
+        float: left;
+        width: 100%;
+    }
+    
+    #form-method input{
+        float: left;
+    }
+
+    #form-contact-days p{
+        float: left;
+        width: 100%;
+    }
+
+    #form-contact-days label{
+        float: left;
+        width: 70%;
+    }
+
+    #form-contact-days input{
+        float: left;
+        width: 20%;
+    }
+    #form-message p{
+        float: left;
+        width: 60%;
+    }
+    
+    #form-message input{
+        margin: 0px 20px;
+        font-weight: bold;
+        border: none;
+        width: 75px;
+        float: right;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #form-message button{
+        font-weight: bold;
+    }
+
+    #form-message textarea{
+        width: 100%;
+    }
+    
+    
+    /* #form-purposes{
+        
+        margin-left: 19%;
+        margin-right: 35%;
+    }
+
+    #form-name{
+        
+        margin-left: 19%;
+        margin-right: 35%;
+    }
+
+    #form-email{
+      
+        margin-left: 19%;
+        margin-right: 35%;
+    }
+
+    #form-phone{
+        margin-left: 19%;
+        margin-right: 35%;
+    }
+    
+    #form-method{
+        
+        margin-left: 19%;
+        margin-right: 35%;
+    }
+
+    #form-contact-days{
+        
+        margin-left: 19%;
+        margin-right: 35%;
+    }
+    
+    #form-message{
+        
+        margin-left: 18%;
+        margin-right: 35%;
+        border-bottom: white;
+    } 
+    */
+
+/* end contact */
+
+/* Browse by Name (mall) */
+
+    .by-name {
+        margin-bottom: 20px;
+    }
+
+    .by-name h1 {
+        font-weight: bold;
+    }
+
+    .by-name nav {
+        padding: 20px 0px;
+        width: 100%;
+        border-bottom: 3px solid #FCC6D7;
+    }
+
+    .by-name nav a {
+        text-decoration: none;
+        padding: 0px 16.7px;
+        font-size: 20px;
+        color: black;
+    }
+
+    .by-name nav a:hover {
+        color: #FCC6D7;
+    }
+
+/* End Browse by Name (mall) */
+
+/* Browse by Category */
+
+    .by-category {
+        margin-bottom: 20px;
+    }
+
+    .by-category h1 {
+        font-weight: bold;
+    }
+    
+    .by-category div {
+        padding: 20px 0px;
+        border-bottom: 3px solid #FCC6D7;
+    }
+
+    .by-category label {
+        padding-right: 10px;
+    }
+
+/* End Browse by Category */
+
+/* Forget Password (mall) */
+
+    .section-heading-forgetpw {
+        font-family: 'Raleway', sans-serif;
+        padding-bottom: 10px;
+        font-weight:bold;
+        font-size: 30px;
+    }
+
+    .form-body-forgetpw {
+        background-color: pink;
+        padding : 50px 70px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .form-body-forgetpw form label{
+        display: inline-block;
+        clear: left;
+        min-width: 100px;
+        max-width: 250px;
+        text-align: right;
+    }
+
+    .form-body-forgetpw form input {
+        margin: 10px;
+        display: inline-block;
+        width: 380px; 
+    }
+
+    .form-body-forgetpw .submit-forgetpw{
+        width: 75px;
+        float: right;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .submit-forgetpw input {
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+        width: 75px;
+        font-weight: bold;
+    }
+
+/* End Forget Password (mall) */
+
+/* Login (mall) */
+
+    .body-login {
+        overflow: hidden;
+    }
+
+    .say-hi {
+        display: inline-block;
+        width: 65%;
+        height: fit-content;
+    }
+
+    .say-hi p {
+        color: #FCC6D7;
+        letter-spacing: 30px;
+        text-align: center;
+        width: 100%;
+        font-size: 70px;
+        margin: 25px 0px;
+        height: 33.3%;
+        font-weight: bold;
+    }
+
+    .say-hi p + p + p{
+        color: black;
+        letter-spacing: 30px;
+        text-align: center;
+        width: 100%;
+        font-size: 70px;
+        margin: 25px 0px;
+        height: 33.3%;
+        font-weight: bold;
+    }
+
+    .login-field {
+        vertical-align: top;
+        display: inline-block;
+        width: 30%;
+        height: 100%;
+        padding: 20px;
+        background-color:#FCC6D7;
+        margin-top: 25px;
+    }
+
+    .login-field div {
+        padding: 20px 0px;
+        width: 100%;
+        display: block;
+    }
+
+    .login-field div label {
+        padding-right: 20px;
+        width: 50px;
+    }
+
+    .login-field div input {
+        float: right;
+    }
+
+    .login-field input[type=submit] {
+        border: none;
+        padding: 10px 20px; 
+        background-color:white;  
+    }
+
+    .login-field input[type=text] , .login-field input[type=password]{
+        border: none;
+        height: 19px;
+        padding: 0px 20px; 
+        background-color:white;  
+    }
+
+
+/* End Login (mall) */
+
+/* Product detail (store) */
+
+.detail-picture{
+    display: inline-block;
+    vertical-align: top;
+    width: 35%;
+}
+
+.section-body img{
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+}
+
+.detail-body {
+    margin-left: 20px;
+    padding-left: 18px;
+    border-left: 2px #FCC6D7 solid;
+    display: inline-block;
+    width: 55%;
+}
+
+.detail-body p{
+    text-align:justify;
+}
+
+.detail-body h1 {
+    margin: 0;
+}
+
+.detail-action button{
+    border: none;
+    margin-right: 20px;
+    padding: 0px 20px;
+}
+
+.detail-action button a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+/* End Product detail (store) */
+
+/* Order (store) */
+  
+
+    .order-header h1{
+        display: inline-block;
+        width: 33%;
+        margin-bottom: 5px;
+    }
+
+    .order-body *{
+        display: inline-block;
+        width: 33%;
+        margin-bottom: 5px;
+    }
+
+    .order-body input{
+        width: 10%;
+        margin-right: 22.5%;
+    }
+
+    .order-total p{
+        display: inline-block;
+        width: 33%;
+        margin-bottom: 5px;
+    }
+
+    .order-action {
+        margin-top: 16px;
+    }
+
+    .order-action button{
+        float: right;
+        border: none;
+        margin-right: 20px;
+        padding: 0px 20px;
+    }   
+
+    .order-action button a{
+        text-decoration: 0;
+        color: black;
+        font-weight: bold
+    }
+
+/* End Order (store) */
+
+/* Cookie */
+.cookie-pop-up {
+    position: fixed;
+    height:20%;
+    width: 100%;
+    background-color: #FCC6D7;
+    padding: 20px 100px;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    bottom: 0;
+    /* -webkit-transition: opacity 0.7s; */
+    transition: opacity 0s; 
+  }
+  
+  .cookie-pop-up div {
+    display: inline-block;
+    padding: 0px 20px;
+    margin-right: 50px;
+    background-color: #cef1ff;
+  }
+  
+  .cookie-pop-up a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+/* End Cookie */
+
+/* Footer */
+
+footer nav{
+    text-align: right;
+    height: 100%;
+}
+
+footer nav a{
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+}
+
+footer nav a:hover{
+    color: #FCC6D7 ;
+}
+
+/* End footer */

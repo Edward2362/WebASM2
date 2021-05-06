@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../src-store.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="Home Page.html"><img src="../img/BP-store.jpg" alt="logo"></a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="Home Page.html">Home</a>
+                    <a href="About Us.html">About Us</a>
+                    <a href="Contact.html">Contact</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Browse</button>
+                        <div class="dropdown-content">
+                            <a href="Browse by Category.html">By Category</a>
+                            <a href="Browse by Created Time.html">By Created Time</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="form-body-contact">
+                <form>
+                    <div id="form-purposes">
+                        <p>Purposes</p>
+                        <select name="purposes" id="purposes">
+                            <option value="p1">Stores</option>
+                            <option value="p2">Products</option>
+                            <option value="p3">Delivery</option>
+                            <option value="p4">Employees</option>
+                            <option value="p5">Collabs</option>
+                            <option value="p6">Others</option>
+                        </select>
+                    </div>
+                    <div id="form-name">
+                        <p>Name</p>
+                        <input type="text" id="name" name="name">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" pattern=".+@." placeholder="something@gmail.com">
+                    </div>
+                    <div id="form-phone">
+                    <p>Phone</p>
+                    <input type="number" id="number" placeholder="0123456789">
+                    </div>
+                    <div id="form-method">
+                    <p>Choose your preferred method</p>
+                    <input type="radio" id="m1" name="method" value="email">
+                    <label for="m1">Email</label>
+                    <input type="radio" id="m2" name="method" value="phone">
+                    <label for="m2">Phone</label>
+                    </div>
+                    <div id="form-contact-days">
+                    <p>Contact days</p>
+                    <label for="Monday">Monday</label>
+                    <input type="checkbox" id="Monday" name="Date" value="Monday">
+                    <label for="Tuesday">Tuesday</label>
+                    <input type="checkbox" id="Tuesday" name="Date" value="Tuesday">
+                    <label for="Wednesday">Wednesday</label>
+                    <input type="checkbox" id="Wednesday" name="Date" value="Wednesday">
+                    <label for="Thursday">Thursday</label>
+                    <input type="checkbox" id="Thursday" name="Date" value="Thursday">
+                    <label for="Friday">Friday</label>
+                    <input type="checkbox" id="Friday" name="Date" value="Friday">
+                    <label for="Saturday">Saturday</label>
+                    <input type="checkbox" id="Saturday" name="Date" value="Saturday">
+                    <label for="Sunday">Sunday</label>
+                    <input type="checkbox" id="Sunday" name="Date" value="Sunday">
+                    </div>
+                    <div id="form-message">
+                        <p>To Message</p>
+                        <textarea id="message" name="message" rows="20" cols="100"
+                            placeholder="Type your message here."></textarea>
+                            <div>
+                        <input type="submit">
+                        <input type="reset" value="Clear"></input>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="Copyright.html">Copyright</a>
+            <a href="Terms of Service.html">Terms of Service</a>
+            <a href="Privacy Policy.html">Privacy Policy</a>
+        </nav>
+    </footer>
+    <script src="../js/jvscp.js"></script>
+</body>
+
+</html>
