@@ -515,6 +515,18 @@ section{
     #form-message textarea{
         width: 100%;
     }
+
+    #notification{
+        display: none;
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    #checkSubmit{
+        display: none;
+        font: 15px;
+        color: red;
+    }
     
     
     /* #form-purposes{

@@ -230,7 +230,7 @@ section {
 
 /* Store contact */
 .form-body-contact{
-  background-color:lightgrey;
+  background-color: lightgray;
   padding: 120px 150px;
   margin-left: 20%;
   margin-right: 20%;
@@ -342,6 +342,18 @@ section {
   #form-message textarea{
       width: 100%;
   }
+
+  #notification{
+    display: none;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#checkSubmit{
+  display: none;
+  font: 15px;
+  color: red;
+}
 
 /* Thank You */
 

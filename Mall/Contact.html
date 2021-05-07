@@ -38,8 +38,7 @@
     <main>
         <section>
             <div class="form-body-contact">
-                <form>
-
+                <form id="contact-form">
                     <div id="form-purposes">
                         <p>Contact purposes</p>
                         <select name="purposes" id="purposes">
@@ -53,24 +52,24 @@
                     </div>
                     <div id="form-name">
                         <p>Name</p>
-                        <input type="text" id="name" name="name" size="90">
+                        <input type="text" id="name" name="name" size="90" required>
                     </div>
                     <div id="form-email">
                         <p>Email</p>
-                        <input type="email" id="email" pattern=".+@." placeholder="something@gmail.com">
+                        <input type="email" id="email" placeholder="something@gmail.com" required>
                     </div>
 
                     <div id="form-phone">
                         <p>Phone</p>
-                        <input type="text" pattern="[0-9]+" id="number" placeholder="0123456789">
+                        <input type="text" id="phone" placeholder="0123456789" required>
                     </div>
 
                     <div id="form-method">
                         <p>Choose your preferred method</p>
                         <label for="m1">Email</label>
-                        <input type="radio" id="m1" name="method" value="email">
+                        <input type="radio" id="m1" name="method" value="email" required>
                         <label for="m2">Phone</label>
-                        <input type="radio" id="m2" name="method" value="phone">
+                        <input type="radio" id="m2" name="method" value="phone" required>
                     </div>
 
                     <div id="form-contact-days">
@@ -106,12 +105,14 @@
                     </div>
                     <div id="form-message">
                         <p>To Message</p>
+                        <p id="notification"></p>
                         <textarea id="message" name="message" rows="20" cols="100"
                             placeholder="Type your message here."></textarea>
                         <div>
-                            <input type="submit">
-                            <input type="reset" value="Clear"></input>
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Clear">
                         </div>
+                        <p id="checkSubmit"></p>
                     </div>
                 </form>
             </div>
