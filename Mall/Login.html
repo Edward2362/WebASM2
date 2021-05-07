@@ -43,22 +43,23 @@
                     <p>THE MALL</p>
                 </div>
                 <div class="login-field">
-                    <form>
+                    <form id="login-form">
                         <div>
                             <label for="login"><b>Username</b></label>
-                            <input type="text" required placeholder="Email or Phone number">
+                            <input id = "username" type="text" required placeholder="Email">
                         </div>
                         <div>
                             <label for="psw"><b>Password</b></label>
-                            <input type="password" required><br>
+                            <input id = "password" type="password" required><br>
                         </div>
+                        <p id="error-message">Invalid Email or password</p>
                         <div id="login-field-options">
                             <div>
                                 <a href="Forgot Password.html"> Forgot Password</a>
                                 <a href="Register Account.html">Register</a>
                             </div>
                             <div>
-                                <input type="submit" value="Login">
+                                <input id="submit" type="submit" value="Login">
                             </div>
                         </div>
                     </form>
@@ -74,6 +75,7 @@
         </nav>
     </footer>
     <script src="../js/jvscp.js"></script>
+    <script src="../js/Login.js"></script>
 </body>
 
 </html>
