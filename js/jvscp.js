@@ -41,41 +41,41 @@ document.getElementById("Quang").addEventListener("click", overlayOnQuang);
 
 function overlayOnQuang() {
   document.getElementById("overlayQuang").style.display = "block";
-  }
+}
 
 function overlayOffQuang() {
   document.getElementById("overlayQuang").style.display = "none";
-  }
+}
 
 document.getElementById("Chang").addEventListener("click", overlayOnChang);
 
 function overlayOnChang() {
   document.getElementById("overlayChang").style.display = "block";
-  }
+}
 
 function overlayOffChang() {
   document.getElementById("overlayChang").style.display = "none";
-  }
+}
 
 document.getElementById("Tuan").addEventListener("click", overlayOnTuan);
 
 function overlayOnTuan() {
   document.getElementById("overlayTuan").style.display = "block";
-  }
+}
 
 function overlayOffTuan() {
   document.getElementById("overlayTuan").style.display = "none";
-  }
+}
 
 document.getElementById("Minh").addEventListener("click", overlayOnMinh);
 
 function overlayOnMinh() {
   document.getElementById("overlayMinh").style.display = "block";
-  }
+}
 
 function overlayOffMinh() {
   document.getElementById("overlayMinh").style.display = "none";
-  }
+}
 // End About Us Overlay
 
 // Contact validation
@@ -100,7 +100,7 @@ validate.addEventListener("submit", function (ev) {
 
 function validateName() {
   customerName = document.getElementById("name").value;
-  name_pattern = /^...+$/;
+  name_pattern = /^[a-zA-Z]{3,}$/;
   if (name_pattern.test(customerName)) {
     return true;
   }
@@ -126,7 +126,7 @@ function validatePhone() {
 }
 
 function validateCDay() {
-  test = [1,2,3,4];
+  test = [1, 2, 3, 4];
   checkedBoxArr = document.querySelectorAll("input[type=checkbox]:checked");
   arrLength = checkedBoxArr.length;
   if (arrLength > 0) {
@@ -137,16 +137,16 @@ function validateCDay() {
 
 inTyping = document.getElementById("message");
 var check = false;
-inTyping.addEventListener("input", function(ev) {
+inTyping.addEventListener("input", function (ev) {
   userInput = inTyping.value;
   userInputWithoutSpace = userInput.split(" ");
   count = 0;
   for (const i of userInputWithoutSpace) {
-    count += i.length; 
+    count += i.length;
   }
   message = document.getElementById("notification");
   message.style.display = "block";
-  if (count < 50){
+  if (count < 50) {
     message.style.color = "red";
     message.innerHTML = (50 - count) + " more letters are needed";
     check = false;
@@ -156,19 +156,24 @@ inTyping.addEventListener("input", function(ev) {
     message.innerHTML = "You can type " + (500 - count) + " more letters";
     check = true;
   }
-  else{
+  else {
     message.style.color = "red";
     message.innerHTML = "Deleting " + (count - 500) + " letters is needed";
     check = false;
   }
 });
 
-  function validateMess() {
-    if (check){
-      return true;
-    }
-    return false;
+function validateMess() {
+  if (check) {
+    return true;
   }
+  return false;
+}
 
-  // End contact validation
+// End contact validation
 
+// Login
+
+
+
+// End Login
