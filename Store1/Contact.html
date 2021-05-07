@@ -34,7 +34,7 @@
     <main>
         <section>
             <div class="form-body-contact">
-                <form>
+                <form id="contact-form">
                     <div id="form-purposes">
                         <p>Purposes</p>
                         <select name="purposes" id="purposes">
@@ -49,47 +49,63 @@
                     <div id="form-name">
                         <p>Name</p>
                         <input type="text" id="name" name="name">
-
-                        <label for="email">Email</label>
-                        <input type="email" id="email" pattern=".+@." placeholder="something@gmail.com">
+                    </div>
+                    <div id="form-email">
+                        <p>Email</p>
+                        <input type="email" id="email" placeholder="something@gmail.com">
                     </div>
                     <div id="form-phone">
-                    <p>Phone</p>
-                    <input type="number" id="number" placeholder="0123456789">
+                        <p>Phone</p>
+                        <input type="number" id="phone" placeholder="0123456789">
                     </div>
                     <div id="form-method">
-                    <p>Choose your preferred method</p>
-                    <input type="radio" id="m1" name="method" value="email">
-                    <label for="m1">Email</label>
-                    <input type="radio" id="m2" name="method" value="phone">
-                    <label for="m2">Phone</label>
+                        <p>Choose your preferred method</p>
+                        <input type="radio" id="m1" name="method" value="email">
+                        <label for="m1">Email</label>
+                        <input type="radio" id="m2" name="method" value="phone">
+                        <label for="m2">Phone</label>
                     </div>
                     <div id="form-contact-days">
-                    <p>Contact days</p>
-                    <label for="Monday">Monday</label>
-                    <input type="checkbox" id="Monday" name="Date" value="Monday">
-                    <label for="Tuesday">Tuesday</label>
-                    <input type="checkbox" id="Tuesday" name="Date" value="Tuesday">
-                    <label for="Wednesday">Wednesday</label>
-                    <input type="checkbox" id="Wednesday" name="Date" value="Wednesday">
-                    <label for="Thursday">Thursday</label>
-                    <input type="checkbox" id="Thursday" name="Date" value="Thursday">
-                    <label for="Friday">Friday</label>
-                    <input type="checkbox" id="Friday" name="Date" value="Friday">
-                    <label for="Saturday">Saturday</label>
-                    <input type="checkbox" id="Saturday" name="Date" value="Saturday">
-                    <label for="Sunday">Sunday</label>
-                    <input type="checkbox" id="Sunday" name="Date" value="Sunday">
-                    </div>
-                    <div id="form-message">
-                        <p>To Message</p>
-                        <textarea id="message" name="message" rows="20" cols="100"
-                            placeholder="Type your message here."></textarea>
+                        <p>Contact days</p>
+                        <div>
+                            <label for="Monday">Monday</label>
+                            <input type="checkbox" id="Monday" name="Date" value="Monday">
+                        </div>
+                        <div>
+                            <label for="Tuesday">Tuesday</label>
+                            <input type="checkbox" id="Tuesday" name="Date" value="Tuesday">
+                        </div>
+                        <div>
+                            <label for="Wednesday">Wednesday</label>
+                            <input type="checkbox" id="Wednesday" name="Date" value="Wednesday">
+                        </div>
+                        <div>
+                            <label for="Thursday">Thursday</label>
+                            <input type="checkbox" id="Thursday" name="Date" value="Thursday">
+                        </div>
+                        <div>
+                            <label for="Friday">Friday</label>
+                            <input type="checkbox" id="Friday" name="Date" value="Friday">
+                        </div>
+                        <div>
+                            <label for="Saturday">Saturday</label>
+                            <input type="checkbox" id="Saturday" name="Date" value="Saturday">
+                        </div>
+                        <div>
+                            <label for="Sunday">Sunday</label>
+                            <input type="checkbox" id="Sunday" name="Date" value="Sunday">
+                        </div>
+                        <div id="form-message">
+                            <p>To Message</p>
+                            <p id="notification"></p>
+                            <textarea id="message" name="message" rows="20" cols="100"
+                                placeholder="Type your message here."></textarea>
                             <div>
-                        <input type="submit">
-                        <input type="reset" value="Clear"></input>
-                    </div>
-                    </div>
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Clear">
+                            </div>
+                            <p id="checkSubmit"></p>
+                        </div>
                 </form>
             </div>
         </section>
