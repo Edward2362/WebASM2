@@ -880,3 +880,42 @@ footer nav a:hover{
 }
 
 /* End footer */
+
+/* About Us NEW03 */
+
+#overlayQuang, #overlayChang, #overlayTuan, #overlayMinh {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: auto;
+  }
+
+#overlayBox {
+    width: 60%;
+    height: 60%;
+    border: white solid 3px;
+    margin: 10% 5% 15% 20%;
+    position: relative;
+    background-color: rgb(255, 253, 253);
+    opacity: 0.9;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+#overlayText {
+    position: absolute;
+    width: 80%;
+    top: 7%;
+    left: 0;
+    margin: 5% 5% 10% 10%;
+    font-size: 1.5vw;
+    color: rgb(5, 5, 5);
+  }
+
+  /* End About Us NEW03 */
