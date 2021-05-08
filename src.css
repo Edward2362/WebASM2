@@ -762,6 +762,11 @@ section{
         margin-bottom: 5px;
     }
 
+    #error-message {
+        display: none;
+        color: red;
+    }
+
 /* End Login (mall) */
 
 /* Product detail (store) */
