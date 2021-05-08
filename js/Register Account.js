@@ -46,7 +46,7 @@ return false;
 
 function validatePassword() {
 var customerPassword = document.forms["RegisterForm"]["regPw"].value;
-passwordPttern = /^(?!.*[\s])(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,20}$/;
+passwordPttern = /^(?!.*[\s])(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#$%^&*]).{8,20}$/;
 if (passwordPattern.test(customerPassword)) {
 return true;
 }
@@ -64,7 +64,7 @@ return false;
 
 function validateFName() {
 var customerFName = document.forms["RegisterForm"]["regFName"].value;
-fNamePattern = /^[a-zA-Z]{3,}$/;
+fNamePattern = /^[a-zA-Z\s]{3,}$/;
 if (fNamePattern.test(customerFName)) {
 return true;
 }
@@ -74,7 +74,7 @@ return false;
 
 function validateLName() {
 var customerLName = document.forms["RegisterForm"]["regLName"].value;
-lNamePattern = /^[a-zA-Z]{3,}$/;
+lNamePattern = /^[a-zA-Z\s]{3,}$/;
 if (lNamePattern.test(customerLName)) {
 return true;
 }
@@ -84,7 +84,7 @@ return false;
 
 function validateAddress() {
 var customerAddress = document.forms["RegisterForm"]["regAddress"].value;
-addressPattern = /^[a-zA-Z ?]{3,}$/;
+addressPattern = /^[a-zA-Z0-9\s]{3,}$/;
 if (addressPattern.test(customerAddress)) {
 return true;
 }
@@ -94,7 +94,7 @@ return false;
 
 function validateCity() {
 var customerCity = document.forms["RegisterForm"]["regCity"].value;
-cityPattern = /^[a-zA-Z ?]{3,}$/;
+cityPattern = /^[a-zA-Z\s]{3,}$/;
 if (cityPattern.test(customerCity)) {
 return true;
 }
