@@ -46,8 +46,8 @@ return false;
 
 function validatePassword() {
 var customerPassword = document.forms["RegisterForm"]["regPw"].value;
-password_pattern = /^(?!.*[\s])(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,20}$/;
-if (password_pattern.test(customerPassword)) {
+passwordPttern = /^(?!.*[\s])(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,20}$/;
+if (passwordPattern.test(customerPassword)) {
 return true;
 }
 alert("Password must have at least one Uppercase, one lowercase, a digit and a special character.")
@@ -84,7 +84,7 @@ return false;
 
 function validateAddress() {
 var customerAddress = document.forms["RegisterForm"]["regAddress"].value;
-addressPattern = /^[a-zA-Z]{3,}$/;
+addressPattern = /^[a-zA-Z ?]{3,}$/;
 if (addressPattern.test(customerAddress)) {
 return true;
 }
@@ -94,7 +94,7 @@ return false;
 
 function validateCity() {
 var customerCity = document.forms["RegisterForm"]["regCity"].value;
-cityPattern = /^[a-zA-Z]{3,}$/;
+cityPattern = /^[a-zA-Z ?]{3,}$/;
 if (cityPattern.test(customerCity)) {
 return true;
 }
