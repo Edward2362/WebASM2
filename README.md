@@ -13,20 +13,23 @@ Hosting URL: https://edward2362.github.io/WebASM1/
 
 References:
 
-[1]"Google Fonts", Google Fonts
+[1] "Google Fonts", Google Fonts
 https://fonts.google.com/specimen/Raleway (Accessed: Apr 17, 2021).
 
-[2]"Google Fonts", Google Fonts
+[2] "Google Fonts", Google Fonts
 https://fonts.google.com/specimen/Open+Sans (Accessed: Apr. 17, 2021).
 
-[3]"Logos - Thousands of Handcrafted Logos to Customise & Make Your Own", Brandcrowd.com
+[3] "Logos - Thousands of Handcrafted Logos to Customise & Make Your Own", Brandcrowd.com
 https://www.brandcrowd.com/maker/logos?text=&searchService=. (Accessed: Apr. 17, 2021).
 
-[4]"Costco Logo | Symbol, History, PNG (3840*2160)", Logos-world.net
+[4] "Costco Logo | Symbol, History, PNG (3840*2160)", Logos-world.net
 https://logos-world.net/costco-logo/. (Accessed: 17- Apr- 2021).
 
-[5]"Download BLACKPINK Logo: TEXT, JPG, PNG, FONT NAME", BLACKPINK UPDATE
+[5] "Download BLACKPINK Logo: TEXT, JPG, PNG, FONT NAME", BLACKPINK UPDATE
 https://blackpinkupdate.com/blackpink-official-logo-text-jpg-png-font-name-color-code/#2_blackpink_text_logo. (Accessed: Apr 17, 2021).
 
-[6]K. Mishra, "FAQS on shopee", CedCommerce Blog
+[6] K. Mishra, "FAQS on shopee", CedCommerce Blog
 https://cedcommerce.com/blog/what-the-faq-about-shopee/. (Accessed: Apr. 17, 2021).
+
+[7] Junior Developer Central, How To Code Your Own Cookie Consent Popup with JavaScript (Jul 6, 2020), Accessed May 5, 2021. 
+[Online Video]. Available: https://youtu.be/-HgdzYCi2nI
