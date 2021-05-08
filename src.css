@@ -811,6 +811,10 @@ section{
     color: black;
 }
 
+#add-message {
+    display: none;
+}
+
 /* End Product detail (store) */
 
 /* Order (store) */
