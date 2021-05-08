@@ -19,7 +19,7 @@ validate.addEventListener("submit", function (ev) {
 
 function validateName() {
   customerName = document.getElementById("name").value;
-  name_pattern = /^[a-zA-Z]{3,}[a-zA-Z ?]?/;
+  name_pattern = /^[a-zA-Z ?]{3,}$/;
   if (name_pattern.test(customerName)) {
     return true;
   }

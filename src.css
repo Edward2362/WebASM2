@@ -28,6 +28,7 @@ header {
     font-family: 'Open Sans', sans-serif;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 /* header */
@@ -157,28 +158,43 @@ section{
     display: flex;
     flex-flow: row wrap;
     align-content: flex-start;
+    
     }
 
+    
+
     .store-card {
-    margin: 39px;
     height: 15em;
-    max-width: 45em;
-    flex: 1 1 auto;
-    display: flex;
+    width: 30%;
+    margin-right: 5%;
+    display: inline-block;
     background-color: white;
     box-shadow: 1px 3px 3px rgba(252, 198, 215, 0.8);
     }
 
+
+
     .card-body {
-    width: 12em;
-    max-height: 100%;
-    flex: 1 1 auto;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    padding: 1.8em;
+        padding: 40px;
+        vertical-align: top;
+        display: inline-block;
+        width: 40%;
     }
 
+    #store-card-1{
+        position: absolute;
+        
+    }
+
+    #store-card-2{
+        position: absolute;
+    }
+
+    .card-body *{
+    height: 100%;
+    }
+
+    
     .store-card img {
     height: 100%;
     max-width: 400px;
@@ -209,6 +225,9 @@ section{
         background-color: white;
         text-align: center;
         box-shadow: 1px 3px 3px rgba(252, 198, 215, 0.8);
+        display: inline-block;
+        z-index: 1;
+        
     }
 
     .product-card a {
@@ -224,6 +243,26 @@ section{
         flex: 1 1 auto;
         object-fit: contain;
     }
+
+    #card1{
+        position: absolute;
+        height: 40%;
+    }
+
+    #card2{
+        position: absolute;
+        height: 40%;
+    }
+    #card3{
+        position: absolute;
+        height: 40%;
+    }
+
+    #card4{
+        position: absolute;
+        height: 40%;
+    }
+
     
     /* end product tag */
     
@@ -843,23 +882,12 @@ section{
         margin-bottom: 5px;
     }
 
-    .coupon-body {
-        font-size: 10px;
-        margin-top: 16px;
-    }
-
-    .coupon-body * {
-        padding-right: 20px;
-        display: inline-block;
-    }
-
     .order-action {
         margin-top: 16px;
-        padding-left: 75%;
     }
 
     .order-action button{
-        display: inline-block;
+        float: right;
         border: none;
         margin-right: 20px;
         padding: 0px 20px;
@@ -958,8 +986,3 @@ footer nav a:hover{
   }
 
   /* End About Us NEW03 */
-
-  #invalid {
-      display: none;
-      color: red;
-  }

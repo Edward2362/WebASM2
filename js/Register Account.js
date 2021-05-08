@@ -64,7 +64,7 @@ return false;
 
 function validateFName() {
 var customerFName = document.forms["RegisterForm"]["regFName"].value;
-fNamePattern = /^[a-zA-Z]{2,}[a-zA-Z\s]{1,}$/;
+fNamePattern = /^[a-zA-Z\s]{3,}$/;
 if (fNamePattern.test(customerFName)) {
 return true;
 }
@@ -74,7 +74,7 @@ return false;
 
 function validateLName() {
 var customerLName = document.forms["RegisterForm"]["regLName"].value;
-lNamePattern = /^[a-zA-Z]{2,}[a-zA-Z\s]{1,}$/;
+lNamePattern = /^[a-zA-Z\s]{3,}$/;
 if (lNamePattern.test(customerLName)) {
 return true;
 }

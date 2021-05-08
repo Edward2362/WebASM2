@@ -31,7 +31,7 @@ if (!(localStorage.getItem('User') == null)) {
         cart[productName].price = productPrice * newQtt;
         localStorage.setItem("Cart", JSON.stringify(cart));
         ev.preventDefault();
-        document.getElementById("add-message").innerHTML = "You have added " + newQtt + " items!";
+        document.getElementById("add-message").innerHTML = "You have brought " + newQtt + " items!";
         document.getElementById("add-message").style.display = "block";
     });
 }else{
