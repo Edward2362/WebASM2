@@ -44,16 +44,21 @@
                         <h1>Price</h1>
                     </div>
                     <hr>
-                    <div class="order-body">
+                    <div class="order-body" id="order">
                         <p>Blackpink</p>
-                        <input type="number" min="1" max="99" value="1">
+                        <input id="product-name" type="number" min="1" max="99" value="1">
                         <p>12,000đ</p>
                     </div>
                     <hr>
-                    <div class="order-total">
+                    <div class="order-total" id="total">
                         <p>Total</p>
                         <p>1</p>
                         <p>12,000đ</p>
+                    </div>
+                    <div class="coupon-body">
+                        <h2>Coupon</h2>
+                        <input id="coupon" type="text">
+                        <p id="invalid">Invalid coupon!</p>
                     </div>
                     <div class="order-action">
                         <button type="button"><a href="#">Continue shopping</a></button>
@@ -70,6 +75,7 @@
         </nav>
     </footer>
     <script src="../js/Accept Cookies.js"></script>
+    <script src="../js/Order Placement.js"></script>
 </body>
 
 </html>
