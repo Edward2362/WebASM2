@@ -8,7 +8,6 @@ if (localStorage.getItem('User') == null) {
         }
         else {
             localStorage.setItem('User', username);
-            localStorage.setItem('Password', password);
             setTimeout(goToMyA, 0);
         }
     })
