@@ -84,7 +84,7 @@ return false;
 
 function validateAddress() {
 var customerAddress = document.forms["RegisterForm"]["regAddress"].value;
-addressPattern = /^[a-zA-Z0-9\s]{3,}$/;
+addressPattern = /^[a-zA-Z0-9\s\.\/\,\-]{3,}$/;
 if (addressPattern.test(customerAddress)) {
 return true;
 }
