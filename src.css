@@ -28,6 +28,7 @@ header {
     font-family: 'Open Sans', sans-serif;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 /* header */
@@ -167,6 +168,7 @@ section{
     display: flex;
     background-color: white;
     box-shadow: 1px 3px 3px rgba(252, 198, 215, 0.8);
+    z-index: 1;
     }
 
     .card-body {
@@ -193,6 +195,19 @@ section{
     color: black;
     }
 
+    #storecard1{
+        position: absolute;
+        width: 30%;
+        height: 30%;
+    }
+
+    #storecard2{
+        position: absolute;
+        width: 30%;
+        height: 30%;
+        
+    }
+
     .card-text h1, .card-text p {
     margin-top: 0;
     }
@@ -209,6 +224,7 @@ section{
         background-color: white;
         text-align: center;
         box-shadow: 1px 3px 3px rgba(252, 198, 215, 0.8);
+        z-index: 1  ;
     }
 
     .product-card a {
@@ -223,6 +239,26 @@ section{
         height: 50%;
         flex: 1 1 auto;
         object-fit: contain;
+    }
+
+    #card1{
+        position: absolute;
+        height: 40%;
+    }
+
+    #card2{
+        position: absolute;
+        height: 40%;
+    }
+
+    #card3 {
+        position: absolute;
+        height: 40%;
+    }
+
+    #card4 {
+        position: absolute;
+        height: 40%;
     }
     
     /* end product tag */
